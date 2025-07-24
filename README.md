@@ -27,7 +27,7 @@
       src="https://github.com/DSTBP/SWPU-OpenLib/blob/main/SWPU.png?raw=true" 
       alt="SWPU图标" 
       width="40" height="40" style="vertical-align: middle; border-radius: 50%; margin-right: 8px;">
-    <span style="font-size:2.2em; font-weight: bold; vertical-align: middle;">
+    <span style="font-size:3em; font-weight: bold; vertical-align: middle;">
       西南石油大学 · 开放知识库
     </span>
   </p>
