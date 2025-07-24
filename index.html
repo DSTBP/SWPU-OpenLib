@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWPU.wiki - 西南石油大学学生资源平台</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/maple-mono-cn/dist/MapleMono-CN-Regular/result.css' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body class="text-neutral-700 font-sans">
+  <!-- 导航栏 -->
+  <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <span class="text-xl font-bold text-white">SWPU.wiki</span>
+      </div>
+      
+      <!-- 桌面导航 -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link">首页</a>
+        <a href="#manual" class="nav-link">生存手册</a>
+        <a href="#docs" class="nav-link">课程攻略</a>
+        <a href="#about" class="nav-link">关于我们</a>
+        <button id="themeToggle" class="ml-4 text-white text-2xl" aria-label="切换日夜模式">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+      
+      <!-- 移动端菜单按钮 -->
+      <div class="md:hidden flex items-center">
+        <button id="menuBtn" class="text-white text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    
+    <!-- 移动端导航菜单 -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+      <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+        <a href="#home" class="mobile-link">首页</a>
+        <a href="#manual" class="mobile-link">生存手册</a>
+        <a href="#docs" class="mobile-link">课程攻略</a>
+        <a href="#about" class="mobile-link">关于我们</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 英雄区域 -->
+  <section id="home" class="hero-gradient min-h-screen flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute w-96 h-96 rounded-full bg-white top-20 -right-20 animate-float bubble-animate" style="z-index:1;"></div>
+      <div class="absolute w-72 h-72 rounded-full bg-white -bottom-10 -left-10 animate-float bubble-animate" style="animation-delay: 2s;z-index:1;"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 py-20 relative z-10">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="heading-xl">西南石油大学<br>开放知识库</h1>
+        <p class="text-desc">汇集西油实用信息，帮助你更好地了解校园、规划学业、享受大学生活</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#manual" class="btn btn-primary shadow-lg">探索生存手册</a>
+          <a href="#docs" class="btn btn-outline">查看课程攻略</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="absolute bottom-0 left-0 w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <path class="wave-bg" fill="#F5F7FA" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,53.3C672,53,768,75,864,74.7C960,75,1056,53,1152,48C1248,43,1344,53,1392,58.7L1440,64L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 生存手册部分 -->
+  <section id="manual" class="py-24 bg-neutral-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-16 fade-in">
+        <h2 class="heading-lg">西南石油大学生存手册</h2>
+        <p class="text-lg-desc">一站式获取校园生活实用信息，让你的大学生活更加从容</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center fade-in">
+        <div class="order-2 md:order-1">
+          <div class="bg-white rounded-2xl overflow-hidden shadow-xl card-shadow hover-scale">
+            <img src="https://picsum.photos/800/500?random=1" alt="西南石油大学生存手册预览" class="w-full h-64 object-cover">
+            <div class="p-8">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                  <i class="fa-solid fa-map"></i>
+                </div>
+                <h3 class="ml-4 text-xl font-semibold text-neutral-700">校园生活指南</h3>
+              </div>
+              <p class="text-neutral-500 mb-6">
+                包含校园地图、宿舍生活、食堂指南、快递点、运动设施等全方位的校园生活信息，帮助新生快速适应大学生活。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">校园地图</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">食堂攻略</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">宿舍生活</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">快递服务</span>
+              </div>
+              <a href="https://manual.SWPU.wiki" target="_blank" class="inline-flex items-center text-primary font-medium">
+                访问生存手册 <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="order-1 md:order-2">
+          <h3 class="text-2xl font-bold text-neutral-700 mb-6">探索校园的每一个角落</h3>
+          <p class="text-neutral-500 mb-6 text-lg">
+            西南石油大学生存手册是专为西油学生打造的综合性指南，涵盖校园生活的方方面面。无论你是新生还是即将毕业的学姐学长，都能从中找到实用的信息。
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center icon-success mt-1 flex-shrink-0">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-neutral-700 mb-1">新生入学指南</h4>
+                <p class="text-neutral-500">从报到流程到宿舍安排，全方位指导新生顺利开启大学生活</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center icon-success mt-1 flex-shrink-0">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-neutral-700 mb-1">校园设施介绍</h4>
+                <p class="text-neutral-500">详细介绍图书馆、教学楼、实验室、体育馆等校园设施的使用方法</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center icon-success mt-1 flex-shrink-0">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-neutral-700 mb-1">校园周边信息</h4>
+                <p class="text-neutral-500">提供学校周边餐饮、购物、娱乐、医疗等生活服务信息</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="https://manual.SWPU.wiki" target="_blank" class="btn btn-alt">阅读手册</a>
+            <a href="https://manual-v.SWPU.wiki" target="_blank" class="btn btn-alt">备用站1</a>
+            <a href="https://manual.01r.cc" target="_blank" class="btn btn-alt">备用站2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 课程攻略部分 -->
+  <section id="docs" class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-16 fade-in">
+        <h2 class="heading-lg">西南石油大学课程攻略共享计划</h2>
+        <p class="text-lg-desc">汇聚学姐学长的经验，让你的学业之路更加顺畅</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center fade-in">
+        <div>
+          <h3 class="text-2xl font-bold text-neutral-700 mb-6">共享知识，共同成长</h3>
+          <p class="text-neutral-500 mb-6 text-lg">
+            西南石油大学课程攻略共享计划是一个由学生自主维护的开源项目，致力于为西油学生提供全面、实用的课程学习资料和经验分享。
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center icon-success mt-1 flex-shrink-0">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-neutral-700 mb-1">课程评价与攻略</h4>
+                <p class="text-neutral-500">学姐学长分享的课程经验、考试技巧、推荐教材等实用信息</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center icon-success mt-1 flex-shrink-0">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-neutral-700 mb-1">学习资料分享</h4>
+                <p class="text-neutral-500">包含课件、作业、实验报告、历年试题等丰富的学习资源</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center icon-success mt-1 flex-shrink-0">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-neutral-700 mb-1">专业选择与规划</h4>
+                <p class="text-neutral-500">提供各专业的详细介绍、就业前景和选课建议，帮助你规划学业</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <a href="https://github.com/NJUST-OpenLib/NJUST-docs" target="_blank" class="inline-flex items-center px-6 py-3 github-btn">
+              访问GitHub仓库 <i class="fa-brands fa-github ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-xl card-shadow hover-scale border border-neutral-200">
+            <div class="bg-neutral-800 p-4 flex items-center justify-between">
+              <div class="flex space-x-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div class="text-neutral-400 text-sm">GitHub - NJUST-docs</div>
+              <div class="text-neutral-400">
+                <i class="fa-solid fa-ellipsis-h"></i>
+              </div>            </div>
+            <div class="bg-neutral-900 text-neutral-200 p-4 sm:p-6 text-sm overflow-hidden rounded-b-lg" style="font-family: 'Maple Mono CN', monospace;">
+                <pre class="code-block" style="font-family: 'Maple Mono CN', 'Fira Code', 'Cascadia Code', 'Source Code Pro', 'Consolas', 'Courier New', monospace;">
+# NJUST 课程攻略共享计划
+
+## 项目介绍
+本项目是西南石油大学学生自发维护的课程攻略共享平台，旨在为西油学子提供全面、实用的课程学习资料和经验分享。
+
+## 内容结构
+|-- 大学物理实验
+|   |-- README.md
+|   |-- 11120904 - 1.5 学分 - 大学物理实验（Ⅰ）
+|       |-- README.md
+|       |-- Sakura的学习心得.md
+|       |-- _附件
+|           |-- 实验1指导书.pdf
+|           |-- 参考课件.pptx
+|   |-- 1322060D - 3.5 学分 - 大学物理（Ⅱ）
+|       |-- README.md
+|       |-- Misaka的个人复习笔记.md
+|       |-- _附件
+|           |-- 实验2指导书.pdf
+|           |-- 实验指导课件.pptx
+
+## 如何贡献
+1. Fork 本仓库
+2. 创建你的分支: `git checkout -b my-new-feature`
+3. 提交你的修改: `git commit -am 'Add some feature'`
+4. Push 到你的分支: `git push origin my-new-feature`
+5. 提交 Pull Request
+
+## 参与贡献
+我们欢迎每一位西油学子参与贡献，共同完善这份课程攻略！</pre>
+            </div>
+            <div class="p-6 border-t border-neutral-200">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center">
+                  <img src="https://picsum.photos/40/40?random=2" alt="用户头像" class="w-10 h-10 rounded-full mr-3">
+                  <div>
+                    <div class="font-medium text-neutral-700">SWPU-OpenLib</div>
+                    <div class="text-sm text-neutral-500">课程攻略维护团队</div>
+                  </div>
+                </div>
+                <div class="flex space-x-3">
+                  <div class="flex items-center text-neutral-500">
+                    <i class="fa-brands fa-github mr-1"></i>
+                    <span>GitHub</span>
+                  </div>
+                  <div class="flex items-center text-neutral-500">
+                    <i class="fa-solid fa-star icon-accent mr-1"></i>
+                    <span>243</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm rounded-full">开源项目</span>
+                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm rounded-full">课程攻略</span>
+                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm rounded-full">学习资源</span>
+                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm rounded-full">学生贡献</span>
+              </div>
+              <a href="https://github.com/NJUST-OpenLib/NJUST-docs" target="_blank" class="inline-flex items-center text-secondary font-medium">
+                查看完整仓库 <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 贡献部分 -->
+  <section id="contribute" class="py-24 bg-neutral-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-16 fade-in">
+        <h2 class="heading-lg">加入我们，共同建设</h2>
+        <p class="text-lg-desc">每一份贡献都将帮助更多西油学子</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 fade-in">
+        <div class="bg-white rounded-xl p-8 shadow-lg hover-scale">
+          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center icon-info text-2xl mb-6">
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-neutral-700 mb-4">贡献内容</h3>
+          <p class="text-neutral-500 mb-6">
+            如果你有宝贵的校园生活经验或课程学习资料，欢迎加入我们的项目，分享你的知识和经验。
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-neutral-600">
+              <i class="fa-solid fa-check icon-success mr-2"></i>
+              完善生存手册内容
+            </li>
+            <li class="flex items-center text-neutral-600">
+              <i class="fa-solid fa-check icon-success mr-2"></i>
+              添加课程攻略和学习资料
+            </li>
+            <li class="flex items-center text-neutral-600">
+              <i class="fa-solid fa-check icon-success mr-2"></i>
+              分享校园生活实用信息
+            </li>
+          </ul>
+          <a href="https://github.com/NJUST-OpenLib/NJUST-docs/blob/main/CONTRIBUTING.md" target="_blank" class="text-primary font-medium">
+            查看贡献指南 <i class="fa-solid fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+        
+        <div class="bg-white rounded-xl p-8 shadow-lg hover-scale">
+          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center icon-info text-2xl mb-6">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-neutral-700 mb-4">技术支持</h3>
+          <p class="text-neutral-500 mb-6">
+            如果你擅长前端开发、后端开发或设计，欢迎参与项目的技术维护和优化工作。
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-neutral-600">
+              <i class="fa-solid fa-check icon-success mr-2"></i>
+              网站开发与维护
+            </li>
+            <li class="flex items-center text-neutral-600">
+              <i class="fa-solid fa-check icon-success mr-2"></i>
+              项目架构优化
+            </li>
+            <li class="flex items-center text-neutral-600">
+              <i class="fa-solid fa-check icon-success mr-2"></i>
+              设计改进与优化
+            </li>
+          </ul>
+          <a href="https://github.com/NJUST-OpenLib" target="_blank" class="text-primary font-medium">
+            访问技术仓库 <i class="fa-solid fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+        
+        <div class="bg-white rounded-xl p-8 shadow-lg hover-scale">
+          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center icon-warning text-2xl mb-6">
+            <i class="fa-solid fa-bullhorn"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-neutral-700 mb-4">宣传推广</h3>
+          <p class="text-neutral-500 mb-6">
+            如果你认同我们的项目理念，欢迎帮助宣传推广，让更多西油学子受益。
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-neutral-600">
+              <i class="fa-solid fa-check icon-success mr-2"></i>
+              在校园内宣传项目
+            </li>
+            <li class="flex items-center text-neutral-600">
+              <i class="fa-solid fa-check icon-success mr-2"></i>
+              推荐给需要的同学
+            </li>
+            <li class="flex items-center text-neutral-600">
+              <i class="fa-solid fa-check icon-success mr-2"></i>
+              在社交媒体分享
+            </li>
+          </ul>
+          <a href="https://manual.SWPU.wiki/about/contact.html" target="_blank" class="text-primary font-medium">
+            联系我们 <i class="fa-solid fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于部分 -->
+  <section id="about" class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-16 fade-in">
+        <h2 class="heading-lg">关于 SWPU.wiki</h2>
+        <p class="text-lg-desc">我们是一个由西南石油大学学生自主维护的非营利性项目</p>
+      </div>
+      
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-white rounded-xl p-8 shadow-lg mb-12 fade-in">
+          <h3 class="text-2xl font-bold text-neutral-700 mb-6">项目愿景</h3>
+          <p class="text-neutral-600 mb-6 text-lg">
+            SWPU.wiki 致力于打造一个全面、实用、易用的西南石油大学学生资源平台，帮助西油学子更好地了解校园、规划学业、享受大学生活。
+          </p>
+          <p class="text-neutral-600 mb-6 text-lg">
+            我们相信，通过学生之间的经验分享和知识传承，可以让每一位西油学子的大学生活更加精彩。
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-12 fade-in">
+          <div class="bg-white rounded-xl p-8 shadow-lg">
+            <h3 class="text-xl font-semibold text-neutral-700 mb-6 flex items-center">
+              <i class="fa-solid fa-shield-check text-primary mr-3"></i>
+              内容政策
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i class="fa-solid fa-check-circle icon-success mt-1 mr-3"></i>
+                <span class="text-neutral-600">所有内容均由西油学生自愿贡献</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check-circle icon-success mt-1 mr-3"></i>
+                <span class="text-neutral-600">严格审核机制，确保内容准确可靠</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check-circle icon-success mt-1 mr-3"></i>
+                <span class="text-neutral-600">尊重知识产权，拒绝盗版和侵权内容</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check-circle icon-success mt-1 mr-3"></i>
+                <span class="text-neutral-600">定期更新维护，保持内容的时效性</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bg-white rounded-xl p-8 shadow-lg">
+            <h3 class="text-xl font-semibold text-neutral-700 mb-6 flex items-center">
+              <i class="fa-solid fa-users text-primary mr-3"></i>
+              项目团队
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i class="fa-solid fa-user-circle icon-user mt-1 mr-3"></i>
+                <span class="text-neutral-600">由西油学生志愿者组成的核心团队</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-user-circle icon-user mt-1 mr-3"></i>
+                <span class="text-neutral-600">来自各个学院的同学共同参与维护</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-user-circle icon-user mt-1 mr-3"></i>
+                <span class="text-neutral-600">定期招募新成员，不断注入新鲜血液</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-user-circle icon-user mt-1 mr-3"></i>
+                <span class="text-neutral-600">所有贡献者都会获得相应的感谢和认可</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <!-- <h3 class="text-xl font-semibold text-neutral-700 mb-6">关注我们</h3>
+          <div class="flex justify-center space-x-6">
+            <a href="https://github.com/NJUST-OpenLib" class="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600 hover:bg-primary hover:text-white transition-colors">
+              <i class="fa-brands fa-github"></i>
+            </a> -->
+           <!---
+            <a href="#" class="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600 hover:bg-primary hover:text-white transition-colors">
+              <i class="fa-brands fa-weixin"></i>
+            </a>
+            <a href="#" class="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600 hover:bg-primary hover:text-white transition-colors">
+              <i class="fa-brands fa-qq"></i>
+            </a>
+            <a href="#" class="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600 hover:bg-primary hover:text-white transition-colors">
+              <i class="fa-brands fa-weibo"></i>
+            </a>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-neutral-800 text-neutral-300 py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-6">
+            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <span class="text-xl font-bold text-white">SWPU.wiki</span>
+          </div>
+          <p class="text-neutral-400 mb-6">
+            西南石油大学学生资源平台，致力于为西油学子提供全面、实用的校园生活和学习资源。
+            <br>
+            Refer to https://njust.wiki/
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/NJUST-OpenLib" class="text-neutral-400 hover:text-white transition-colors">
+              <i class="fa-brands fa-github"></i>
+            </a>
+         <!---    <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <i class="fa-brands fa-weixin"></i>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <i class="fa-brands fa-qq"></i>
+            </a>
+        -->
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">快速链接</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-neutral-400 hover:text-white transition-colors">首页</a></li>
+            <li><a href="#manual" class="text-neutral-400 hover:text-white transition-colors">生存手册</a></li>
+            <li><a href="#docs" class="text-neutral-400 hover:text-white transition-colors">课程攻略</a></li>
+            <li><a href="#contribute" class="text-neutral-400 hover:text-white transition-colors">加入我们</a></li>
+            <li><a href="#about" class="text-neutral-400 hover:text-white transition-colors">关于我们</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">相关项目</h4>
+          <ul class="space-y-2">
+            <li><a href="https://manual.SWPU.wiki" target="_blank" class="text-neutral-400 hover:text-white transition-colors">生存手册</a></li>
+            <li><a href="https://github.com/NJUST-OpenLib/NJUST-docs" target="_blank" class="text-neutral-400 hover:text-white transition-colors">课程攻略</a></li>
+         
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">联系我们</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="fa-solid fa-envelope text-primary mr-3"></i>
+              <a href="mailto:contact@SWPU.wiki" class="text-neutral-400 hover:text-white transition-colors">admin@SWPU.wiki</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-brands fa-github text-primary mr-3"></i>
+              <a href="https://github.com/NJUST-OpenLib" target="_blank" class="text-neutral-400 hover:text-white transition-colors">GitHub</a>
+            </li>
+          <!-- <li class="flex items-center">
+              <i class="fa-brands fa-weixin text-primary mr-3"></i>
+              <span class="text-neutral-400">NJUST_WIKI</span>
+              --> 
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-neutral-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-neutral-500 text-sm mb-4 md:mb-0">
+          &copy; 2025 SWPU.wiki. 保留所有权利。
+        </p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-neutral-500 hover:text-white text-sm transition-colors">隐私政策</a>
+          <a href="#" class="text-neutral-500 hover:text-white text-sm transition-colors">使用条款</a>
+          <a href="#" class="text-neutral-500 hover:text-white text-sm transition-colors">贡献指南</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 返回顶部按钮 -->
+  <button id="backToTop" class="fixed bottom-8 right-8 z-50 button-animated shadow-lg hidden" aria-label="返回顶部">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <!-- 加载动画界面 -->
+  <div id="loader" class="fixed inset-0 bg-white flex flex-col items-center justify-center z-[9999]">
+    <div class="animate-spin rounded-full border-4 border-[var(--color-primary)] border-t-transparent h-16 w-16 mb-4"></div>
+    <span class="text-[var(--color-primary)] font-bold text-lg">SWPU.wiki 加载中...</span>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
