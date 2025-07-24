@@ -90,9 +90,7 @@
 
 <p align="left">
   <a href="https://github.com/DSTBP" target="_blank">
-    <img src="https://avatars.githubusercontent.com/u/19553554?v=4" width="60" style="border-radius:50%;margin-right:8px;vertical-align:middle;" alt="DSTBP"/>
-    <br/>
-    <sub><b>@DSTBP</b></sub>
+    <img src="https://avatars.githubusercontent.com/u/93864880?v=4" width="60" height="60" style="border-radius:50%;margin-right:8px;vertical-align:middle;object-fit:cover;" alt="DSTBP"/>
   </a>
 </p>
 
