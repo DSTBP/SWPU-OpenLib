@@ -91,21 +91,9 @@
 
 ✨ <b>核心贡献者</b>：
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/DSTBP" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/93864880?v=4" width="60" height="60" alt="DSTBP"/>
-      </a>
-    </td>
-    <td width="20"></td> <!-- 空白间隔列 -->
-    <td align="center">
-      <a href="https://github.com/YDTJv" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/96191155?v=4" width="60" height="60" alt="YDTJv"/>
-      </a>
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/DSTBP/SWPU-OpenLib/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dstbp/SWPU-OpenLib" />
+</a>
 
 ---
 
