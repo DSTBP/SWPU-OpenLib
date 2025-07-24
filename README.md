@@ -36,7 +36,7 @@
 
 我们是来自 <b>西南石油大学</b> 的学生，致力于打造一个 <b>开放、共享的课程学习资源库</b>，助力石大学子高效学习、突破学业难关，传承石油精神与学术薪火！
 
-<div align="center" style="background: #e3f2fd; border-radius: 8px; border-left: 6px solid #1976d2; padding: 1em; margin: 1em 0; max-width: 700px;">
+<div align="center" style="background: #e3f2fd; border-radius: 8px; border-left: 6px solid #1976d2; padding: 1em; margin: 1em 0; max-width: 1000px;">
   <b>ℹ️ 声明：</b>本项目是学生自发组织的非营利性学习交流平台，与学校官方无隶属关系。所有内容仅供学习参考，不代表学校官方立场。
 </div>
 
@@ -44,8 +44,7 @@
 
 ## 🚀 项目内容
 
-<details>
-<summary><b>SWPU-OpenLib 涵盖以下核心资源</b></summary>
+<b>SWPU-OpenLib 涵盖以下核心资源</b>
 
 - <b>课程档案</b>
   - 📖 课程评价（授课特点 / 考核模式 / 给分情况）
@@ -61,18 +60,13 @@
   - 🗂️ 优质课程群 / 学习社群推荐
   - 📅 学术活动日历与重要事项提醒
 
-</details>
 
 ---
 
 ## 👥 欢迎贡献
 
-<div align="center">
-  <img src="https://img.shields.io/badge/贡献指南-Contribution%20Guide-1976d2?style=for-the-badge&logo=github"/>
-</div>
-
-**期待你的加入，让资源库更完善！**
-无论是补充课程资料、修正内容错误，还是提出改进建议，都可通过以下方式参与：
+<b>期待你的加入，让资源库更完善！</b>
+<p>无论是补充课程资料、修正内容错误，还是提出改进建议，都可通过以下方式参与：</p>
 
 1. <b>提交资料</b>：通过 [Pull Request](https://github.com/SWPU-OpenLib/SWPU-OpenLib/pulls) 上传学习资源
 2. <b>反馈问题</b>：在 [Issues](https://github.com/SWPU-OpenLib/SWPU-OpenLib/issues) 提出建议或纠错
@@ -92,8 +86,9 @@
 ## ❤️ 致谢
 
 感谢每一位参与者的无私分享！（按贡献时间排序）
+
 ✨ <b>核心贡献者</b>：
-[此处添加贡献者列表]
+- [@DSTBP](https://github.com/DSTBP)
 
 ---
 
