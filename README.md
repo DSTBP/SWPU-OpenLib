@@ -22,18 +22,13 @@
   </pre>
 </div>
 <div align="center">
-  <h1><img src="https://github.com/DSTBP/SWPU-OpenLib/blob/main/SWPU.png?raw=true" alt="SWPU图标" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"> 西南石油大学 · 开放知识库</h1>
+  <h1><img src="https://github.com/DSTBP/SWPU-OpenLib/blob/main/SWPU.png?raw=true" alt="SWPU图标" style="width: 50px; height: 45px; vertical-align: middle; margin-right: 8px;"> 西南石油大学 · 开放知识库</h1>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/dstbp/SWPU-OpenLib?color=blue&style=for-the-badge"></a>
   <a href="https://github.com/dstbp/SWPU-OpenLib/graphs/contributors"><img src="https://img.shields.io/github/contributors/dstbp/SWPU-OpenLib?style=for-the-badge"></a>
   <img src="https://img.shields.io/badge/西南石油大学-开放知识库-6699FF?style=for-the-badge&logo=bookstack&logoColor=white"/>
   <img src="https://img.shields.io/badge/欢迎贡献-Join%20Us-43a047?style=for-the-badge&logo=github"/>
 </div>
 
-<p align="center">
-  <!-- dynamic typing effect 动态打字效果 -->
-  <a href="https://dstbp.com/">
-    <img src="https://readme-typing-svg.demolab.com/?lines=App%20reverse%20workers%20and%20Crypto%20enthusiasts;A%20novice%20programmer%20who%20studies%20hard;2%2B%20years%20of%20coding%20experience;Always%20learning%20new%20things;Enjoy%20making%20friends&font=Fira%20Code&center=true&width=640&height=45&color=6699FF&vCenter=true&pause=1000&size=22" /></a>
-</p>
 ---
 
 
