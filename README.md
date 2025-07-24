@@ -92,15 +92,13 @@
 ✨ <b>核心贡献者</b>：
 
 <p align="left">
-  <a href="https://github.com/DSTBP" target="_blank" style="display:inline-block;">
-    <img src="https://avatars.githubusercontent.com/u/19553554?v=4" width="60" height="60" style="border-radius:50%;margin-right:16px;vertical-align:middle;object-fit:cover;display:inline-block;" alt="DSTBP"/>
-    <br/>
-    <sub><b>@DSTBP</b></sub>
+  <a href="https://github.com/DSTBP" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/93864880?v=4" width="60" height="60" style="border-radius:50%;margin-right:8px;vertical-align:middle;object-fit:cover;" alt="DSTBP"/>
   </a>
-  <a href="https://github.com/YDTJv" target="_blank" style="display:inline-block;">
-    <img src="https://avatars.githubusercontent.com/u/96191155?v=4" width="60" height="60" style="border-radius:50%;margin-right:16px;vertical-align:middle;object-fit:cover;display:inline-block;" alt="YDTJv"/>
-    <br/>
-    <sub><b>@YDTJv</b></sub>
+</p>
+<p>
+  <a href="https://github.com/YDTJv" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/96191155?v=4" width="60" height="60" style="border-radius:50%;margin-right:8px;vertical-align:middle;object-fit:cover;" alt="YDTJv"/>
   </a>
 </p>
 
