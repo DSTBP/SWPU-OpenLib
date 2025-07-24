@@ -22,7 +22,7 @@
   </pre>
 </div>
 <div align="center">
-  <h1><img src="https://github.com/DSTBP/SWPU-OpenLib/blob/main/SWPU.png?raw=true" alt="SWPU图标" style="width: 50px; height: 45px; vertical-align: middle; margin-right: 8px;"> 西南石油大学 · 开放知识库</h1>
+  <h1><img src="https://github.com/DSTBP/SWPU-OpenLib/blob/main/SWPU.png?raw=true" alt="SWPU图标" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 8px;"> 西南石油大学 · 开放知识库</h1>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/dstbp/SWPU-OpenLib?color=blue&style=for-the-badge"></a>
   <a href="https://github.com/dstbp/SWPU-OpenLib/graphs/contributors"><img src="https://img.shields.io/github/contributors/dstbp/SWPU-OpenLib?style=for-the-badge"></a>
   <img src="https://img.shields.io/badge/西南石油大学-开放知识库-6699FF?style=for-the-badge&logo=bookstack&logoColor=white"/>
