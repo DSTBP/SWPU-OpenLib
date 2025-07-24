@@ -40,7 +40,7 @@
   <b>ℹ️ 声明：</b>本项目是学生自发组织的非营利性学习交流平台，与学校官方无隶属关系。所有内容仅供学习参考，不代表学校官方立场。
 </div>
 
-
+<br>
 
 ## 🚀 项目内容
 
@@ -61,7 +61,7 @@
   - 📅 学术活动日历与重要事项提醒
 
 
-
+<br>
 
 ## 👥 欢迎贡献
 
@@ -72,7 +72,7 @@
 2. <b>反馈问题</b>：在 [Issues](https://github.com/SWPU-OpenLib/SWPU-OpenLib/issues) 提出建议或纠错
 3. <b>贡献指南</b>：查看 贡献说明 了解详细流程
 
-
+<br>
 
 ## 🎯 加入团队
 
@@ -81,6 +81,7 @@
 - 📧 发送邮件至 <b>admin@swpu.wiki</b>（注明专业 / 年级 / 兴趣方向）
 - 💬 或通过 [Discussion](https://github.com/SWPU-OpenLib/SWPU-OpenLib/discussions) 与我们交流
 
+<br>
 
 ## ❤️ 致谢
 
