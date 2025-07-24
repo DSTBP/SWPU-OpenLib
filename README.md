@@ -22,16 +22,15 @@
   </pre>
 </div>
 <div align="center">
-  <div style="text-align: center;">
-    <h1 style="margin: 0 auto; display: inline-flex; align-items: center;">
-      <img 
-        src="https://github.com/DSTBP/SWPU-OpenLib/blob/main/SWPU.png?raw=true" 
-        alt="SWPU图标" 
-        style="width: 40px; height: 40px; margin-right: 8px; vertical-align: middle;"
-      >
+  <p align="center">
+    <img 
+      src="https://github.com/DSTBP/SWPU-OpenLib/blob/main/SWPU.png?raw=true" 
+      alt="SWPU图标" 
+      width="40" height="40" style="vertical-align: middle; border-radius: 50%; margin-right: 8px;">
+    <span style="font-size:2.2em; font-weight: bold; vertical-align: middle;">
       西南石油大学 · 开放知识库
-    </h1>
-  </div>
+    </span>
+  </p>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/dstbp/SWPU-OpenLib?color=blue&style=for-the-badge"></a>
   <a href="https://github.com/dstbp/SWPU-OpenLib/graphs/contributors"><img src="https://img.shields.io/github/contributors/dstbp/SWPU-OpenLib?style=for-the-badge"></a>
   <img src="https://img.shields.io/badge/西南石油大学-开放知识库-6699FF?style=for-the-badge&logo=bookstack&logoColor=white"/>
