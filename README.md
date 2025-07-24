@@ -92,11 +92,11 @@
 ✨ <b>核心贡献者</b>：
 
 <p align="left">
-  <a href="https://github.com/DSTBP">
-    <img src="https://avatars.githubusercontent.com/u/93864880?v=4" width="60" height="60" style="border-radius:50%;margin-right:32px;vertical-align:middle;object-fit:cover;" alt="DSTBP"/>
+  <a href="https://github.com/DSTBP" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/93864880?v=4" width="60" height="60" />
   </a>
-  <a href="https://github.com/YDTJv">
-    <img src="https://avatars.githubusercontent.com/u/96191155?v=4" width="60" height="60" style="border-radius:50%;vertical-align:middle;object-fit:cover;" alt="YDTJv"/>
+  <a href="https://github.com/YDTJv" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/96191155?v=4" width="60" height="60" />
   </a>
 </p>
 
