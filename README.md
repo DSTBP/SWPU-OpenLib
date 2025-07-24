@@ -91,14 +91,21 @@
 
 ✨ <b>核心贡献者</b>：
 
-<p align="left">
-  <a href="https://github.com/DSTBP" target="_blank">
-    <img src="https://avatars.githubusercontent.com/u/93864880?v=4" width="60" height="60" />
-  </a>
-  <a href="https://github.com/YDTJv" target="_blank">
-    <img src="https://avatars.githubusercontent.com/u/96191155?v=4" width="60" height="60" />
-  </a>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/DSTBP" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/93864880?v=4" width="60" height="60" alt="DSTBP"/>
+      </a>
+    </td>
+    <td width="20"></td> <!-- 空白间隔列 -->
+    <td align="center">
+      <a href="https://github.com/YDTJv" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/96191155?v=4" width="60" height="60" alt="YDTJv"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
