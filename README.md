@@ -86,9 +86,15 @@
 ## ❤️ 致谢
 
 感谢每一位参与者的无私分享！（按贡献时间排序）
-
 ✨ <b>核心贡献者</b>：
-- [@DSTBP](https://github.com/DSTBP)
+
+<p align="left">
+  <a href="https://github.com/DSTBP" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/19553554?v=4" width="60" style="border-radius:50%;margin-right:8px;vertical-align:middle;" alt="DSTBP"/>
+    <br/>
+    <sub><b>@DSTBP</b></sub>
+  </a>
+</p>
 
 ---
 
